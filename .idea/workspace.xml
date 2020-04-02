@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsproject/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,22 +84,38 @@
       <option name="presentableId" value="Default" />
       <updated>1584816794257</updated>
       <workItem from="1584816851386" duration="15323000" />
-      <workItem from="1585478671969" duration="3059000" />
+      <workItem from="1585478671969" duration="4020000" />
     </task>
+    <task id="LOCAL-00001" summary="Model Category And News Relationship">
+      <created>1585822031810</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585822031810</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Model Category And News Relationship" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model Category And News Relationship" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="790" y="19" key="CommitChangelistDialog2" timestamp="1585398401113">
+    <state x="790" y="19" key="CommitChangelistDialog2" timestamp="1585822854934">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="790" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585398401113" />
+    <state x="790" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585822854934" />
     <state x="595" y="335" key="Github.CreateGistDialog" timestamp="1585169845170">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="595" y="335" key="Github.CreateGistDialog/0.0.1536.834@0.0.1536.834" timestamp="1585169845170" />
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1585822038148">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585822038148" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1585478689481">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
