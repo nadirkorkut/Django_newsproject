@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="" />
+    <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +22,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Django\newsproject\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1ZRzfBBR2vCdq4Ik6jO9biHTDvj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,6 +42,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/news" />
   </component>
@@ -67,7 +86,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584816794257</updated>
-      <workItem from="1584816851386" duration="13464000" />
+      <workItem from="1584816851386" duration="15323000" />
+      <workItem from="1585478671969" duration="3059000" />
     </task>
     <servers />
   </component>
@@ -75,9 +95,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="790" y="19" key="CommitChangelistDialog2" timestamp="1585398401113">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="790" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585398401113" />
     <state x="595" y="335" key="Github.CreateGistDialog" timestamp="1585169845170">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="595" y="335" key="Github.CreateGistDialog/0.0.1536.834@0.0.1536.834" timestamp="1585169845170" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1585478689481">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1585478689481" />
   </component>
 </project>
