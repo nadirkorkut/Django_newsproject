@@ -7,7 +7,7 @@ class Category(models.Model):
         ('True','Evet'),
         ('False','Hayır'),
     )
-    title=models.CharField(max_length=30)
+    title=models.CharField(max_length=100)
     keywords=models.CharField(max_length=255)
     description=models.CharField(max_length=255)
     image=models.ImageField(blank=True,upload_to='images/')
@@ -26,7 +26,7 @@ class News(models.Model):
         ('False', 'Hayır'),
     )
     category=models.ForeignKey(Category, on_delete=models.CASCADE) #relation with Category table
-    title=models.CharField(max_length=30)
+    title=models.CharField(max_length=150)
     keywords = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
     image = models.ImageField(blank=True, upload_to='images/')
@@ -37,3 +37,12 @@ class News(models.Model):
 
     def __str__(self):
         return self.title
+
+class Images(models.Model):
+    news=models.ForeignKey(News,on_delete=models.CASCADE)
+    title = models.CharField(max_length=50,blank=True)
+    image = models.ImageField(blank=True, upload_to='images/')
+    def __str__(self):
+        return self.title
+
+
