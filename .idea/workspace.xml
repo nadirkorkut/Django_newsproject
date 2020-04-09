@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="Video 5 Finished-Image Upload">
+    <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,7 @@
       <updated>1584816794257</updated>
       <workItem from="1584816851386" duration="15323000" />
       <workItem from="1585478671969" duration="11003000" />
-      <workItem from="1586117216470" duration="8651000" />
+      <workItem from="1586117216470" duration="8795000" />
     </task>
     <task id="LOCAL-00001" summary="Model Category And News Relationship">
       <created>1585822031810</created>
@@ -107,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585823159484</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Video 6 Finished-Using The Ready Css Web Template">
+      <created>1586464897350</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586464897350</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,21 +122,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Model Category And News Relationship" />
     <MESSAGE value="Video 5 Finished-Image Upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="Video 5 Finished-Image Upload" />
+    <MESSAGE value="Video 6 Finished-Using The Ready Css Web Template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Video 6 Finished-Using The Ready Css Web Template" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="790" y="19" key="CommitChangelistDialog2" timestamp="1586105353900">
+    <state x="790" y="19" key="CommitChangelistDialog2" timestamp="1586464891286">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="790" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586105353900" />
+    <state x="790" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586464891286" />
     <state x="595" y="335" key="Github.CreateGistDialog" timestamp="1585169845170">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="595" y="335" key="Github.CreateGistDialog/0.0.1536.834@0.0.1536.834" timestamp="1585169845170" />
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1585823204760">
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1586464902728">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585823204760" />
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586464902728" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1586117385332">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
