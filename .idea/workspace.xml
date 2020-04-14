@@ -4,10 +4,10 @@
     <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsproject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsproject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +89,8 @@
       <workItem from="1584816851386" duration="15323000" />
       <workItem from="1585478671969" duration="11003000" />
       <workItem from="1586117216470" duration="14124000" />
+      <workItem from="1586709981708" duration="624000" />
+      <workItem from="1586880879873" duration="3133000" />
     </task>
     <task id="LOCAL-00001" summary="Model Category And News Relationship">
       <created>1585822031810</created>
@@ -153,21 +155,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="Video 7 Finished-News Admin Image Gallery" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="790" y="19" key="CommitChangelistDialog2" timestamp="1586471309811">
+    <state x="790" y="19" key="CommitChangelistDialog2" timestamp="1586473185319">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="790" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586471309811" />
+    <state x="790" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586473185319" />
     <state x="595" y="335" key="Github.CreateGistDialog" timestamp="1585169845170">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="595" y="335" key="Github.CreateGistDialog/0.0.1536.834@0.0.1536.834" timestamp="1585169845170" />
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1586471313829">
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1586473189939">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586471313829" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1586117385332">
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586473189939" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1586880900080">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1586117385332" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1586880900080" />
   </component>
 </project>
