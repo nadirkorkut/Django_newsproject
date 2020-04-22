@@ -1,0 +1,60 @@
+{% extends "homebase.html" %}
+
+{% block title %}İletişim-{{setting.company}}{% endblock %}
+{% block keywords %}{{setting.keywords}}{% endblock %}
+{% block description %}{{setting.description}}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+{% endblock %}
+
+{% block sidebar %}
+    {% include "sidebar.html" %}
+{% endblock %}
+
+
+{% block content %}
+    <div id="contact-page" class="container">
+        <div class="bg">
+            <div class="row">
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="contact-form">
+                        <h3 class="title text-center">İletişim Formu</h3>
+                        <div class="status alert alert-success" style="display: none"></div>
+
+                        {% if message %}
+                            {% for message in messages %}
+                                <div class="alert alert-{{ message.tags }}" role="alert">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                        <form id="main-contact-form" class="contact-form row" name="contact-form" action="" method="post">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <input type="submit" name="submit" class="btn btn-primary pull-right" value="Submit">
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="contact-info">
+                        <h2 class="title text-center">İletişim Bilgilerimiz</h2>
+                        {{setting.contact|safe}}
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
