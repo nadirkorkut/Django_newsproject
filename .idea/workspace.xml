@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="" />
+    <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="Video 9 Finished-Settings and Dynamic Favicon">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsproject/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +90,9 @@
       <workItem from="1585478671969" duration="11003000" />
       <workItem from="1586117216470" duration="14124000" />
       <workItem from="1586709981708" duration="624000" />
-      <workItem from="1586880879873" duration="3620000" />
+      <workItem from="1586880879873" duration="3997000" />
+      <workItem from="1587478817625" duration="646000" />
+      <workItem from="1587555719929" duration="2814000" />
     </task>
     <task id="LOCAL-00001" summary="Model Category And News Relationship">
       <created>1585822031810</created>
@@ -149,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586884434647</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Video 9 Finished-Settings and Dynamic Favicon">
+      <created>1586884543020</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586884543020</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Video 9 Finished-Settings and Dynamic Favicon">
+      <created>1586884577148</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586884577148</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,10 +190,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="79" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1586884245382" />
-    <state x="790" y="19" key="CommitChangelistDialog2" timestamp="1586884541786">
+    <state x="790" y="19" key="CommitChangelistDialog2" timestamp="1586884778524">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="790" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586884541786" />
+    <state x="790" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586884778524" />
     <state x="595" y="335" key="Github.CreateGistDialog" timestamp="1585169845170">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -180,17 +202,17 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="1001" y="134" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1586884530597" />
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1586884546749">
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1586884578873">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586884546749" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1586880900080">
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586884578873" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1587555740136">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1586880900080" />
-    <state x="580" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586884390376">
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1587555740136" />
+    <state x="580" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586884766124">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="580" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1586884390376" />
+    <state x="580" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1586884766124" />
   </component>
 </project>
