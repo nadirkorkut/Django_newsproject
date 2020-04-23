@@ -1,4 +1,4 @@
-{% extends "homebase.html" %}
+{% extends 'homebase.html' %}
 
 {% block title %}{{setting.title}}{% endblock %}
 {% block keywords %}{{setting.keywords}}{% endblock %}
@@ -9,13 +9,13 @@
 {% endblock %}
 
 {% block sidebar %}
-    {% include "sidebar.html" %}
+    {% include 'sidebar.html' %}
 {% endblock %}
 
 {% block slider %}
-    {% include "slider.html" %}
+    {% include 'slider.html' %}
 {% endblock %}
 
 {% block content %}
-    {% include "content.html" %}
+    {% include 'content.html' %}
 {% endblock %}
