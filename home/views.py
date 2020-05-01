@@ -44,3 +44,14 @@ def iletisim(request):
     form=ContactFormu()
     context={"setting" : setting,'form' : form}
     return render(request, 'iletisim.html', context)
+
+def category_news(request,id,slug):
+    news=News.objects.filter(category_id=id)
+    category=Category.objects.all()
+    categorydata = Category.objects.get(pk=id)
+    context={'news': news,
+             'category' : category,
+             'slug' : slug,
+             'categorydata' : categorydata,
+             }
+    return render(request,'news.html',context)
