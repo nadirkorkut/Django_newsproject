@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/templates/news_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/news.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsproject/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,7 @@
       <workItem from="1587555719929" duration="29663000" />
       <workItem from="1587662097433" duration="46000" />
       <workItem from="1588024945368" duration="19192000" />
-      <workItem from="1588336582074" duration="19569000" />
+      <workItem from="1588336582074" duration="25388000" />
     </task>
     <task id="LOCAL-00001" summary="Model Category And News Relationship">
       <created>1585822031810</created>
@@ -246,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588372207606</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Video 17 Finished-News With Images On Homepage">
+      <created>1588604882771</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1588604882771</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,10 +294,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="1001" y="134" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1586884530597" />
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1588372210623">
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1588604890921">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588372210623" />
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588604890921" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1588336778554">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
