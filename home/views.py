@@ -9,12 +9,21 @@ from news.models import News,Category
 
 def index(request):
     setting = Setting.objects.get(pk=1)
-    sliderdata=News.objects.all()[:4]
+    sliderdata=News.objects.all()[:15]
     category = Category.objects.all()
+    daynews=News.objects.all()[:25]
+    lastnews=News.objects.all().order_by('-id')[:5]
+    randomnews = News.objects.all().order_by('?')[:3]
+
+
     context={"setting" : setting ,
              "category" : category ,
              'page':'home',
-             'sliderdata':sliderdata}
+             'sliderdata':sliderdata,
+             'daynews': daynews,
+             'lastnews': lastnews,
+             'randomnews' : randomnews
+             }
     return render(request, 'index.html', context)
 
 def hakkimizda(request):

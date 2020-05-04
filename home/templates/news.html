@@ -17,7 +17,7 @@
     <div id="contact-page" class="container">
         <ul class="breadcrumb">
             <li><a href="/">Anasayfa</a> </li>
-            <li class="active">{{categorydata.title}}</li>
+            <li class="active">{{categorydata.title}} Haberleri</li>
         </ul>
         <div class="bg">
             <div class="row">
@@ -34,25 +34,19 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="{{ rs.image.url }}" alt="" />
-                                            <a href="/news/{{rs.id}}/{{rs.slug}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Haber Detayı İçin Tıklayınız</a>
+                                            <img src="{{ rs.image.url }}" style="height: 200px" alt="" />
+                                            <a href="/news/{{rs.id}}/{{rs.slug}}" class="btn btn-default add-to-cart">Haber Detayı İçin Tıklayınız</a>
                                         </div>
                                         <div class="product-overlay">
                                             <div class="overlay-content">
                                                 {{ rs.title }}
-                                                <a href="/news/{{rs.id}}/{{rs.slug}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Haber Detayı İçin Tıklayınız</a>
+                                                <a href="/news/{{rs.id}}/{{rs.slug}}" class="btn btn-default add-to-cart">Haber Detayı İçin Tıklayınız</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         {% endfor %}
-                        <ul class="pagination">
-                            <li class="active"><a href="">1</a></li>
-                            <li><a href="">2</a></li>
-                            <li><a href="">3</a></li>
-                            <li><a href="">&raquo;</a></li>
-                        </ul>
                     </div><!--features_items-->
                 </div>
             </div>
