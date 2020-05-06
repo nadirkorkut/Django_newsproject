@@ -1,7 +1,7 @@
 from django.contrib import admin
 from mptt.admin import MPTTModelAdmin
 # Register your models here.
-from news.models import Category, News, Images
+from news.models import Category, News, Images,Comment
 from django.utils.html import format_html
 from mptt.admin import DraggableMPTTAdmin
 
@@ -58,6 +58,11 @@ class ImagesAdmin(admin.ModelAdmin):
     list_display = ['title', 'news','image_tag']
     readonly_fields = ('image_tag',)
 
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['subject','comment','news','rate','user','status']
+    list_filter = ['status']
+
 admin.site.register(Category,CategoryAdmin2)
 admin.site.register(News,NewsAdmin)
 admin.site.register(Images,ImagesAdmin)
+admin.site.register(Comment,CommentAdmin)
