@@ -15,8 +15,8 @@
     <link href="{%static 'css/prettyPhoto.css' %}" rel="stylesheet">
     <link href="{%static 'css/price-range.css' %}" rel="stylesheet">
     <link href="{%static 'css/animate.css' %}" rel="stylesheet">
-	<link href="{%static 'css/main.css' %}" rel="stylesheet">
-	<link href="{%static 'css/responsive.css' %}" rel="stylesheet">
+    <link href="{%static 'css/main.css' %}" rel="stylesheet">
+    <link href="{%static 'css/responsive.css' %}" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="{% static 'js/html5shiv.js' %}"></script>
     <script src="{% static 'js/respond.min.js' %}"></script>
@@ -26,14 +26,21 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'images/ico/apple-touch-icon-114-precomposed.png' %}">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'images/ico/apple-touch-icon-72-precomposed.png' %}">
     <link rel="apple-touch-icon-precomposed" href="{% static 'images/ico/apple-touch-icon-57-precomposed.png' %}">
+
+    <!-- jQuery !-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
+    <!-- jQuery UI !-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
     {% block head %}{% endblock %}
 </head>
-    {% include 'header.html' %}
-    {% block sidebar %} {% endblock %}
-    {% block slider %}  {% endblock %}
-    {% block content %}  {% endblock %}
-    {% include 'footer.html' %}
-    {% block foot %}{% endblock %}
+{% include 'header.html' %}
+{% block sidebar %} {% endblock %}
+{% block slider %}  {% endblock %}
+{% block content %}  {% endblock %}
+{% include 'footer.html' %}
+{% block foot %}{% endblock %}
 <body>
 
 </body>

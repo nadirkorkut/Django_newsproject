@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 from django import forms
+import json
 
 
 # Create your views here.
@@ -85,8 +86,15 @@ def news_search(request):
         form = SearchForm(request.POST)
         if form.is_valid():
             category = Category.objects.all()
-            query= form.cleaned_data['query'] #get form data
-            news= News.objects.filter(title__icontains=query) #select * from news where title like %query%
+
+            query = form.cleaned_data['query'] #get form data
+            catid = form.cleaned_data['catid']
+
+            if catid == 0:
+                news = News.objects.filter(title__icontains=query) #select * from news where title like %query%
+            else:
+                news =News.objects.filter(title__icontains=query,category_id=catid
+                                          )
             context ={ 'news': news,
                        'category': category,
 
@@ -94,3 +102,17 @@ def news_search(request):
             return render(request, 'news_search.html', context)
     return HttpResponseRedirect('/')
 
+def news_search_auto(request):
+    if request.is_ajax():
+        q = request.GET.get('term', '')
+        news = News.objects.filter(title__icontains=q)
+        results = []
+        for rs in news:
+            news_json = {}
+            news_json = rs.title
+            results.append(news_json)
+        data = json.dumps(results)
+    else:
+        data = 'fail'
+    mimetype = 'application/json'
+    return HttpResponse(data, mimetype)
