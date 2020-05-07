@@ -1,7 +1,7 @@
 from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
-
+from django.contrib.auth import logout,login,authenticate
 from django import forms
 import json
 
@@ -93,8 +93,7 @@ def news_search(request):
             if catid == 0:
                 news = News.objects.filter(title__icontains=query) #select * from news where title like %query%
             else:
-                news =News.objects.filter(title__icontains=query,category_id=catid
-                                          )
+                news =News.objects.filter(title__icontains=query,category_id=catid)
             context ={ 'news': news,
                        'category': category,
 
@@ -116,3 +115,26 @@ def news_search_auto(request):
         data = 'fail'
     mimetype = 'application/json'
     return HttpResponse(data, mimetype)
+
+def logout_view(request):
+    logout(request)
+    return HttpResponseRedirect('/')
+
+def login_view(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return HttpResponseRedirect('/')
+
+        else:
+            messages.warning(request,'Giriş İşlemi Başarısız. Bilgileri Kontrol Edin.')
+            return HttpResponseRedirect('/login')
+
+    category = Category.objects.all()
+    context = {'category': category,
+
+              }
+    return render(request, 'login.html', context)
