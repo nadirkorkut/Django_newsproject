@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home/templates/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsproject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsproject/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +104,7 @@
       <workItem from="1587662097433" duration="46000" />
       <workItem from="1588024945368" duration="19192000" />
       <workItem from="1588336582074" duration="39848000" />
-      <workItem from="1588799828544" duration="28795000" />
+      <workItem from="1588799828544" duration="37516000" />
     </task>
     <task id="LOCAL-00001" summary="Model Category And News Relationship">
       <created>1585822031810</created>
@@ -297,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588866082672</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Video 24 Finished-User SignUp Form">
+      <created>1588892436108</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1588892436108</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +334,8 @@
     <MESSAGE value="Video 21 Finished-Autocomplete in News Search With Ajax JQuery" />
     <MESSAGE value="Video 22 Finished-Automatic Slug Creation For News and Category" />
     <MESSAGE value="Video 23 Finished-User Login And Logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Video 23 Finished-User Login And Logout" />
+    <MESSAGE value="Video 24 Finished-User SignUp Form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Video 24 Finished-User SignUp Form" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="79" key="#Inspections" timestamp="1587577931857">
@@ -333,10 +346,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="79" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1586884245382" />
-    <state x="714" y="19" key="CommitChangelistDialog2" timestamp="1588866081001">
+    <state x="714" y="19" key="CommitChangelistDialog2" timestamp="1588892434427">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="714" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588866081001" />
+    <state x="714" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588892434427" />
     <state x="595" y="335" key="Github.CreateGistDialog" timestamp="1585169845170">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -345,10 +358,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="1001" y="134" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1586884530597" />
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1588866085322">
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1588892437673">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588866085322" />
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588892437673" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1588805265118">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
