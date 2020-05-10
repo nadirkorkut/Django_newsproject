@@ -32,13 +32,19 @@ def index(request):
     return render(request, 'index.html', context)
 
 def hakkimizda(request):
+    category = Category.objects.all()
     setting = Setting.objects.get(pk=1)
-    context={"setting" : setting}
+    context={'setting' : setting,
+             'category' : category
+             }
     return render(request, 'hakkimizda.html', context)
 
 def referanslar(request):
+    category = Category.objects.all()
     setting = Setting.objects.get(pk=1)
-    context={"setting" : setting}
+    context={'setting' : setting,
+             'category' : category
+             }
     return render(request, 'referanslarimiz.html', context)
 
 def iletisim(request):
@@ -56,7 +62,11 @@ def iletisim(request):
             return HttpResponseRedirect('/iletisim')
     setting = Setting.objects.get(pk=1)
     form=ContactFormu()
-    context={"setting" : setting,'form' : form}
+    category = Category.objects.all()
+    context={"setting" : setting,
+             'form' : form,
+             'category' : category
+             }
     return render(request, 'iletisim.html', context)
 
 def category_news(request,id,slug):
