@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user/templates/user_panel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/user_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/change_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsproject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +104,7 @@
       <workItem from="1587662097433" duration="46000" />
       <workItem from="1588024945368" duration="19192000" />
       <workItem from="1588336582074" duration="39848000" />
-      <workItem from="1588799828544" duration="48116000" />
+      <workItem from="1588799828544" duration="56730000" />
     </task>
     <task id="LOCAL-00001" summary="Model Category And News Relationship">
       <created>1585822031810</created>
@@ -315,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589038105565</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Video 26 Finished-User Menu and Panel Profile Page">
+      <created>1589070896762</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1589070896762</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +350,8 @@
     <MESSAGE value="Video 23 Finished-User Login And Logout" />
     <MESSAGE value="Video 24 Finished-User SignUp Form" />
     <MESSAGE value="Video 25 Finished-User Profile Information And Image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Video 25 Finished-User Profile Information And Image" />
+    <MESSAGE value="Video 26 Finished-User Menu and Panel Profile Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Video 26 Finished-User Menu and Panel Profile Page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="79" key="#Inspections" timestamp="1587577931857">
@@ -353,10 +362,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="79" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1586884245382" />
-    <state x="714" y="19" key="CommitChangelistDialog2" timestamp="1589038102029">
+    <state x="714" y="19" key="CommitChangelistDialog2" timestamp="1589070894712">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="714" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1589038102029" />
+    <state x="714" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1589070894712" />
     <state x="595" y="335" key="Github.CreateGistDialog" timestamp="1585169845170">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -365,10 +374,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="1001" y="134" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1586884530597" />
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1589038107779">
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1589070902105">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1589038107779" />
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1589070902105" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1588805265118">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
