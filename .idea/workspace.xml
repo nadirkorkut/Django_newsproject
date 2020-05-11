@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/change_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/user_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_comments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_panel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
@@ -17,6 +14,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,6 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/user/templates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -104,7 +105,7 @@
       <workItem from="1587662097433" duration="46000" />
       <workItem from="1588024945368" duration="19192000" />
       <workItem from="1588336582074" duration="39848000" />
-      <workItem from="1588799828544" duration="56730000" />
+      <workItem from="1588799828544" duration="66368000" />
     </task>
     <task id="LOCAL-00001" summary="Model Category And News Relationship">
       <created>1585822031810</created>
@@ -323,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589070896762</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Video 31 Finished-Update User Information and Password">
+      <created>1589124506073</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1589124506074</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +359,8 @@
     <MESSAGE value="Video 24 Finished-User SignUp Form" />
     <MESSAGE value="Video 25 Finished-User Profile Information And Image" />
     <MESSAGE value="Video 26 Finished-User Menu and Panel Profile Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Video 26 Finished-User Menu and Panel Profile Page" />
+    <MESSAGE value="Video 31 Finished-Update User Information and Password" />
+    <option name="LAST_COMMIT_MESSAGE" value="Video 31 Finished-Update User Information and Password" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="79" key="#Inspections" timestamp="1587577931857">
@@ -362,10 +371,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="79" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1586884245382" />
-    <state x="714" y="19" key="CommitChangelistDialog2" timestamp="1589070894712">
+    <state x="714" y="19" key="CommitChangelistDialog2" timestamp="1589124504061">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="714" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1589070894712" />
+    <state x="714" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1589124504061" />
+    <state x="549" y="162" key="FileChooserDialogImpl" timestamp="1589202547683">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="162" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1589202547683" />
     <state x="595" y="335" key="Github.CreateGistDialog" timestamp="1585169845170">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -374,10 +387,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="1001" y="134" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1586884530597" />
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1589070902105">
+    <state x="279" y="63" key="SettingsEditor" timestamp="1589202664380">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1589070902105" />
+    <state x="279" y="63" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1589202664380" />
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1589124508399">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1589124508399" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1588805265118">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -386,5 +403,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="580" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1587591256314" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1589202913250">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1589202913250" />
   </component>
 </project>

@@ -1,0 +1,71 @@
+{% extends "homebase.html" %}
+
+{% block title %}User Comments{% endblock %}
+{% block keywords %}{{setting.keywords}}{% endblock %}
+{% block description %}{{setting.description}}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+{% endblock %}
+
+{% block sidebar %}
+    {% include "sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+    <div id="contact-page" class="container">
+        <div class="bg">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="contact-form">
+                        <div class="status alert alert-success" style="display: none"></div>
+                        {% include "user_panel.html" %}
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="contact-info">
+                        <h2 class="title text-center">User Commnents</h2>
+                        <table class="table table-condensed">
+                            <tr class="cart_menu">
+                                <th class="text-left">News</th>
+                                <th class="text-left">Rate</th>
+                                <th class="text-left">Subject</th>
+                                <th class="text-left">Comment</th>
+                                <th class="text-left">Status</th>
+                                <th class="text-left">Date</th>
+                                <th class="text-left">Detail</th>
+                            <tr>
+                                {% for rs in comments %}
+                                    <tr>
+                                        <td class="text-left">
+                                            <a href="/news/{{ rs.news.id }}/{{ rs.news.slug }}">
+                                                <strong>{{ rs.news.title }}</strong>
+                                            </a>
+                                        </td>
+                                        <td class="text-left">
+                                            {{ rs.rate }}
+                                        </td>
+                                        <td class="text-left">
+                                            {{ rs.subject }}
+                                        </td>
+                                        <td class="text-left">
+                                            {{ rs.comment}}
+                                        </td>
+                                        <td class="text-left">
+                                            {{ rs.status }}
+                                        </td>
+                                        <td class="text-left">
+                                            {{ rs.create_at }}
+                                        </td>
+                                        <td class="text-left">
+                                            <a class="btn btn-primary" href="/user/deletecomment/{{ rs.id }}" onclick="return confirm('Will be Delete! Are you sure')">Delete</a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
