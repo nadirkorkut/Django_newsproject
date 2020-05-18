@@ -1,0 +1,41 @@
+{% extends "homebase.html" %}
+
+{% block title %}404 Not Found{{setting.company}}{% endblock %}
+{% block keywords %}{{setting.keywords}}{% endblock %}
+{% block description %}{{setting.description}}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+{% endblock %}
+
+{% block sidebar %}
+    {% include "sidebar.html" %}
+{% endblock %}
+{% block content %}
+    <div id="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">Anasayfa</a> </li>
+                <li class="active">Error Page</li>
+            </ul>
+        </div>
+    </div>
+    {% load static %}
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="container text-center">
+                    <div class="logo-404">
+                        <a href="/"><img src="{% static 'images/home/partner2.png' %}" alt="" /></a>
+                    </div>
+                    <div class="content-404">
+                        <img src="{% static 'images/404/404.png' %}" class="img-responsive" alt="" />
+                        <h1><b>OPPS!</b> We Couldn’t Find this Page</h1>
+                        <p>Uh... So it looks like you brock something. The page you are looking for has up and Vanished.</p>
+                        <h2><a href="/">Bring me back Home</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

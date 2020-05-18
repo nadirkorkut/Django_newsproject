@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'content.apps.ContentConfig',
     'news.apps.NewsConfig',
     'home.apps.HomeConfig',
     'user.apps.UserConfig',

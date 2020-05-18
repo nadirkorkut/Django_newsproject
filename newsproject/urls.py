@@ -24,7 +24,8 @@ urlpatterns = [
     path('', include('home.urls')),
     path('home/', include('home.urls')),
     path('news/', include('news.urls')),
-    path('user/',include('user.urls')),
+    path('user/', include('user.urls')),
+    path('content/', include('content.urls')),
     path('admin/', admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),
 
@@ -32,8 +33,13 @@ urlpatterns = [
     path('hakkimizda/', views.hakkimizda, name='hakkimizda'),
     path('referanslar/', views.referanslar, name='referanslar'),
     path('iletisim/', views.iletisim, name='iletisim'),
+    path('error/', views.error, name='error'),
+
     path('category/<int:id>/<slug:slug>/',views.category_news,name='category_news'),
     path('news/<int:id>/<slug:slug>/',views.news_detail,name='news_detail'),
+    path('content/<int:id>/<slug:slug>/', views.contentdetail, name='contentdetail'),
+    path('menu/<int:id>', views.menu, name='menu'),
+
     path('search/', views.news_search, name='news_search'),
     path('search_auto/', views.news_search_auto, name='news_search_auto'),
     path('logout/', views.logout_view, name='logout_view'),

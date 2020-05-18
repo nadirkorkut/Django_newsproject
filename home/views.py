@@ -3,26 +3,35 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.contrib.auth import logout,login,authenticate
 from django import forms
-import json
-from home.forms import SignUpForm
+from home.forms import SignUpForm,SearchForm
 
 
 # Create your views here.
 from home.models import Setting, ContactFormu,ContactFormMessage
 from news.models import News,Category,Images,Comment
-from home.forms import SearchForm
+from content.models import CImages,Menu,Content
+
 
 def index(request):
     setting = Setting.objects.get(pk=1)
     sliderdata=News.objects.all()[:15]
     category = Category.objects.all()
-    daynews=News.objects.all()[:25]
+    menu = Menu.objects.all()
+    daynews=News.objects.all()[:9]
     lastnews=News.objects.all().order_by('-id')[:5]
     randomnews = News.objects.all().order_by('?')[:3]
+    son_dakika = Content.objects.filter(type='Son Dakika').order_by('-id')[:4]
+    dunya =  Content.objects.filter(type='Dunya').order_by('-id')[:4]
+    ekonomi = Content.objects.filter(type='Ekonomi').order_by('-id')[:4]
+    magazin = Content.objects.filter(type='Magazin').order_by('-id')[:4]
 
-
-    context={"setting" : setting ,
-             "category" : category ,
+    context={'setting' : setting,
+             'category' : category,
+             'menu' : menu,
+             'son_dakika' : son_dakika,
+             'dunya': dunya,
+             'ekonomi': ekonomi,
+             'magazin': magazin,
              'page':'home',
              'sliderdata':sliderdata,
              'daynews': daynews,
@@ -167,3 +176,44 @@ def signup_view(request):
 
     }
     return render(request, 'signup.html', context)
+
+def menu(request,id):
+    try:
+        content = Content.objects.get(menu_id=id)
+        link = '/content/' + str(content.id) + '/menu'
+        return HttpResponseRedirect(link)
+    except:
+        messages.warning(request, 'Hata! İlgili içerik Bulunamadı.')
+        link ='/error'
+        return HttpResponseRedirect(link)
+
+def contentdetail(request,id,slug):
+    category = Category.objects.all()
+    menu = Menu.objects.all()
+    try:
+        content = Content.objects.get(pk=id)
+        images = CImages.objects.filter(content_id=id)
+
+        context = {
+            'content' : content,
+            'category' : category,
+            'menu' : menu,
+            'images' : images,
+        }
+
+        return render(request, 'content_detail.html',context)
+    except:
+        messages.warning(request, 'Hata! İlgili içerik Bulunamadı.')
+        link ='/error'
+        return HttpResponseRedirect(link)
+
+
+def error(request):
+    category = Category.objects.all()
+    menu = Menu.objects.all()
+    context = {
+        'category': category,
+        'menu': menu,
+    }
+
+    return render(request, 'error_page.html', context)

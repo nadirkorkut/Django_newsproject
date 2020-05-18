@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="left-sidebar">
-                    <h2>Haberler</h2>
+                    <h2>Kategoriler</h2>
                     <div class="panel-group category-products" id="accordian"><!--category-productsr-->
 
                         <div class="panel panel-default">
@@ -11,7 +11,7 @@
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordian" href="#mens">
                                         <span class="badge pull-right"><i class="fa fa-plus"></i></span>
-                                        Category
+                                        Haber Kategorileri
                                     </a>
                                 </h4>
                             </div>
@@ -38,9 +38,72 @@
                     </div>
                 </div>
             </div>
-            <!--sidebar buraya kadar-->
 
-            <div class="col-sm-9 padding-right">
+
+            <!--sidebar buraya kadar-->
+            <div class="mainmenu pull-left">
+                <ul class="nav navbar-nav collapse navbar-collapse">
+                    {% if menu %}
+                        {% recursetree menu %}
+                            <li class="dropdown">
+                                <a href="/menu/{{ node.id }}" class="active" {% if not node.is_leaf_node %} data-toggle="dropdown-toggle" aria-expanded="true" {% endif %}>{{ node.title }}{% if not node.is_leaf_node %} <i class="fa fa-angle-down"></i>{% endif %} </a>
+
+
+                                {% if not node.is_leaf_node %}
+                                    <ul role="menu" class="sub-menu">
+                                        <li> <a href="#">{{ children }}</a></li>
+                                    </ul>
+                                {% endif %}
+                                <hr class="hidden-md hidden-lg">
+
+                            </li>
+                        {% endrecursetree %}
+                    {% endif %}
+                </ul>
+            </div>
+
+
+
+            <div class="col-sm-12 padding-right">
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="features_items">
+                            <h3 class="title text-center" style="color: orange">Son Dakika</h3>
+                        </div>
+                        <ul class="list-group-item">
+                            {% for rs in son_dakika %}
+                                <li><a href="/content/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></li>
+                                 <hr>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="features_items">
+                            <h3 class="title text-center" style="color: orange">Dünya</h3>
+                        </div>
+                        <ul class="list-group-item">
+                            {% for rs in dunya %}
+                                <li><a href="/content/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></li>
+                                <hr>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="features_items">
+                            <h3 class="title text-center" style="color: orange">Ekonomi</h3>
+                        </div>
+                        <ul class="list-group-item">
+                            {% for rs in ekonomi %}
+                                <li><a href="/content/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></li>
+                                 <hr>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            <br>
                 <div class="features_items"><!--features_items-->
                     <h2 class="title text-center">Gündem</h2>
                     {% for rs in daynews %}
