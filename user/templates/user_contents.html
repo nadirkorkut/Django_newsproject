@@ -1,0 +1,73 @@
+{% extends "homebase.html" %}
+
+{% block title %}User News{% endblock %}
+{% block keywords %}{{setting.keywords}}{% endblock %}
+{% block description %}{{setting.description}}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{setting.icon.url}}' />
+{% endblock %}
+
+{% block sidebar %}
+    {% include "sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+    <div id="contact-page" class="container">
+        <div class="bg">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="contact-form">
+                        <div class="status alert alert-success" style="display: none"></div>
+                        {% include "user_panel.html" %}
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="contact-info">
+                        <h2 class="title text-center">User News List </h2>
+                        <a class="btn btn-primary" href="/user/addcontent">Add News</a>
+                        <table class="table table-condensed">
+                            <tr class="cart_menu">
+                                <th class="text-left">Image</th>
+                                <th class="text-left">Title</th>
+                                <th class="text-left">Type</th>
+                                <th class="text-left">Status</th>
+                                <th class="text-left">Date</th>
+                                <th class="text-left">Detail</th>
+                            <tr>
+                                {% for rs in contents %}
+                                    <tr>
+                                        <td class="text-left">
+                                            <a href="/content/{{ rs.id }}/{{ rs.slug }}">
+                                                <img src="{{ rs.image.url }}" style="height: 30px";>
+                                            </a>
+                                        </td>
+                                        <td class="text-left">
+                                            <a href="/content/{{ rs.id }}/{{ rs.slug }}">
+                                                <strong>{{ rs.title }}</strong>
+                                            </a>
+                                        </td>
+                                        <td class="text-left">
+                                            {{ rs.type }}
+                                        </td>
+                                        <td class="text-left">
+                                            {{ rs.status }}
+                                        </td>
+                                        <td class="text-left">
+                                            {{ rs.create_at }}
+                                        </td>
+                                        <td class="=text-left">
+                                            <a class="btn btn-primary" href="/user/contentedit/{{ rs.id }}">Edit</a>
+                                        </td>
+                                        <td class="text-left">
+                                            <a class="btn btn-primary" href="/user/contentdelete/{{ rs.id }}" onclick="return confirm('Will be Delete! Are you sure')">Delete</a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

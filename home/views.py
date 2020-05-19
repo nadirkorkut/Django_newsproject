@@ -20,10 +20,10 @@ def index(request):
     daynews=News.objects.all()[:9]
     lastnews=News.objects.all().order_by('-id')[:5]
     randomnews = News.objects.all().order_by('?')[:3]
-    son_dakika = Content.objects.filter(type='Son Dakika').order_by('-id')[:4]
-    dunya =  Content.objects.filter(type='Dunya').order_by('-id')[:4]
-    ekonomi = Content.objects.filter(type='Ekonomi').order_by('-id')[:4]
-    magazin = Content.objects.filter(type='Magazin').order_by('-id')[:4]
+    son_dakika = Content.objects.filter(type='Son Dakika',status='True').order_by('-id')[:4]
+    dunya =  Content.objects.filter(type='Dunya',status='True').order_by('-id')[:4]
+    ekonomi = Content.objects.filter(type='Ekonomi',status='True').order_by('-id')[:4]
+    magazin = Content.objects.filter(type='Magazin',status='True').order_by('-id')[:4]
 
     context={'setting' : setting,
              'category' : category,

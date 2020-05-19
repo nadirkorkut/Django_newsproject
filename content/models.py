@@ -1,4 +1,5 @@
 from ckeditor_uploader.fields import RichTextUploadingField
+from ckeditor.widgets import CKEditorWidget
 from django.db import models
 
 # Create your models here.
@@ -6,6 +7,8 @@ from django.urls import reverse
 from django.utils.safestring import mark_safe
 from mptt.fields import TreeForeignKey
 from mptt.models import MPTTModel
+from django.forms import ModelForm,TextInput,Select,FileInput
+from user.models import User,UserProfile,UserProfileFormu
 
 class Menu(MPTTModel):
     STATUS = (
@@ -29,8 +32,8 @@ class Menu(MPTTModel):
             k = k.parent
         return ' / '.join(full_path[::-1])
 
-class Content(models.Model):
-    TYPE = (
+
+TYPE = (
         ('Menu', 'Menu'),
         ('Son Dakika','Son Dakika'),
         ('Dunya', 'Dunya'),
@@ -43,10 +46,13 @@ class Content(models.Model):
         ('Teknoloji', 'Teknoloji'),
         ('Turkiye', 'Turkiye'),
     )
-    STATUS = (
+STATUS = (
         ('True' , 'Evet'),
         ('False', 'Hayır'),
     )
+
+class Content(models.Model):
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     menu = models.OneToOneField(Menu, null=True, blank=True, on_delete=models.CASCADE) #relation with Menu table
     type =models.CharField(max_length=10, choices=TYPE)
     title = models.CharField(blank=True, max_length=150)
@@ -67,6 +73,22 @@ class Content(models.Model):
 
     def get_absolute_url(self):
         return reverse('content_detail', kwargs={'slug': self.slug})
+
+class ContentForm(ModelForm):
+    class Meta:
+        model = Content
+        fields = ['type', 'title', 'slug', 'keywords', 'description', 'image', 'detail']
+        widgets = {
+            'title' : TextInput(attrs={'class' : 'form-control', 'placeholder' : 'title'}),
+            'slug': TextInput(attrs={'class': 'form-control', 'placeholder': 'slug'}),
+            'keywords': TextInput(attrs={'class': 'form-control', 'placeholder': 'keywords'}),
+            'description': TextInput(attrs={'class': 'form-control', 'placeholder': 'description'}),
+            'type' : Select(attrs={'class': 'form-control', 'placeholder': 'type'},choices=TYPE),
+            'image' : FileInput(attrs={'class': 'form-control', 'placeholder': 'image'}),
+            'detail' : CKEditorWidget(),
+
+        }
+
 
 class CImages(models.Model):
     content = models.ForeignKey(Content, on_delete=models.CASCADE)

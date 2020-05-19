@@ -29,15 +29,14 @@
                 <img src="{{ content.image.url }}" height="300" align="left" style="padding: 10px; border-radius: 25px">
                 {{ content.detail | safe }}
                 <hr>
-                Resim Galerisi Gelecek
                 <!--içerik resim galerisi-->
                 {% for rs in images %}
                     <img src="{{ rs.image.url }}" height="200" alt="">
                 {% endfor %}
-            <hr>
-            Yorum Paneli gelecek
+                <hr>
+                <!--Yorum-->
             </div>
-            <!--Yorum-->
+
         </div>
     </div>
 

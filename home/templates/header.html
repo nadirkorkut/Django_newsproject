@@ -42,8 +42,8 @@
                         <ul class="nav navbar-nav">
                         <li><a href="/user"><i class="fa fa-user"></i> {{user.first_name}} </a></li>
                         <ul class="nav navbar-nav">
-                            <li><a href="#"><i class="fa fa-list"></i>My News</a></li>
-                            <li><a href="/user/comments/"><i class="fa fa-comments"></i>My Comments</a></li>
+                            <li><a href="/user/contents"><i class="fa fa-list"></i>My News</a></li>
+                            <li><a href="/user/comments"><i class="fa fa-comments"></i>My Comments</a></li>
                             <li><a href="/logout/"><i class="fa fa-lock"></i>Logout</a></li>
                         </ul>
 
@@ -101,6 +101,7 @@
                             {% csrf_token %}
 
                             <input id="query" name="query" class="input search-input" type="text" placeholder="Enter your keyword"/>
+
 
 
                             {% load mptt_tags %}
