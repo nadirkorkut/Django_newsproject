@@ -10,6 +10,7 @@ from home.forms import SignUpForm,SearchForm
 from home.models import Setting, ContactFormu,ContactFormMessage
 from news.models import News,Category,Images,Comment
 from content.models import CImages,Menu,Content
+from user.models import User,UserProfileFormu,UserProfile
 
 
 def index(request):
@@ -168,6 +169,13 @@ def signup_view(request):
             password = form.cleaned_data.get('password1')
             user = authenticate(request, username=username, password=password)
             login(request,user)
+            #Create Data in profile table for user
+            current_user = request.user
+            data = UserProfile()
+            data.user_id = current_user.id
+            data.image = 'images/users/user.png'
+            data.save()
+            messages.success(request, 'Hoş Geldiniz... İyi okumalar...')
             return HttpResponseRedirect('/')
     form = SignUpForm()
     category = Category.objects.all()
