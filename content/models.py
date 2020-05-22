@@ -100,3 +100,8 @@ class CImages(models.Model):
     def image_tag(self):
         return mark_safe('<img src="{}" height="50"/>'.format(self.image.url))
     image_tag.short_description = 'Image'
+
+class ContentImageForm(ModelForm):
+    class Meta:
+        model = CImages
+        fields = ['title','image']

@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="528b0486-6648-42f3-be9d-9deec072f2f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/user/templates/content_gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/content/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user_contents.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_contents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -119,7 +123,8 @@
       <workItem from="1589235131201" duration="2000000" />
       <workItem from="1589365997907" duration="39638000" />
       <workItem from="1589732777539" duration="1192000" />
-      <workItem from="1589810318847" duration="19513000" />
+      <workItem from="1589810318847" duration="19809000" />
+      <workItem from="1590162107054" duration="4252000" />
     </task>
     <task id="LOCAL-00001" summary="Model Category And News Relationship">
       <created>1585822031810</created>
@@ -366,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589924092391</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Creating user profiles automatically at the user signup time">
+      <created>1589926079834</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1589926079834</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +409,8 @@
     <MESSAGE value="Video 31 Finished-Update User Information and Password" />
     <MESSAGE value="List And Delete User Comments" />
     <MESSAGE value="Content Management Systems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Content Management Systems" />
+    <MESSAGE value="Creating user profiles automatically at the user signup time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating user profiles automatically at the user signup time" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="79" key="#Inspections" timestamp="1587577931857">
@@ -408,10 +421,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="79" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1586884245382" />
-    <state x="714" y="19" key="CommitChangelistDialog2" timestamp="1589924089598">
+    <state x="714" y="19" key="CommitChangelistDialog2" timestamp="1589926078181">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="714" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1589924089598" />
+    <state x="714" y="19" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1589926078181" />
     <state x="549" y="162" key="FileChooserDialogImpl" timestamp="1589382441091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -428,14 +441,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="279" y="63" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1589369626005" />
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1589924094516">
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2" timestamp="1589926090584">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1589924094516" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1589810527244">
+    <state x="722" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1589926090584" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1590162111516">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1589810527244" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1590162111516" />
     <state x="580" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587591256314">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

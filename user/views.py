@@ -8,6 +8,7 @@ from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from content.models import Menu,Content,ContentForm
+from content.models import ContentImageForm,CImages
 
 
 # Create your views here.
@@ -158,6 +159,33 @@ def contentdelete(request,id):
     Content.objects.filter(id=id, user_id=current_user.id).delete()
     messages.success(request, 'Content Deleted...')
     return HttpResponseRedirect('/user/contents')
+
+
+def contentaddimage(request,id):
+    if request.method == 'POST':
+        lasturl = request.META.get('HTTP_REFERER')
+        form = ContentImageForm(request.POST, request.FILES)
+        if form.is_valid():
+            data = CImages()
+            data.title = form.cleaned_data['title']
+            data.content_id = id
+            data.image = form.cleaned_data['image']
+            data.save()
+            messages.success(request, 'Your Image has been successfully uploaded')
+            return HttpResponseRedirect(lasturl)
+        else:
+            messages.warning(request, 'Form Error :' + str(form.errors))
+            return HttpResponseRedirect(lasturl)
+    else:
+        content = Content.objects.get(id=id)
+        images = CImages.objects.filter(content_id=id)
+        form = ContentImageForm()
+        context = {
+            'content' : content,
+            'images' : images,
+            'form' : form,
+        }
+        return render(request, 'content_gallery.html',context)
 
 
 
