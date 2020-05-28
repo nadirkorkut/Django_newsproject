@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="logo pull-left">
-                        <a href="/"><img src="{% static  'images/home/partner2.png'%}" alt="" /></a>
+
                     </div>
                 </div>
                 <div class="col-sm-8">
@@ -91,6 +91,12 @@
 
 
                     <div class="mainmenu pull-left">
+                        <ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="/" class="active">Anasayfa</a></li>
+								<li><a href="/hakkimizda/">Hakkımızda</a></li>
+								<li><a href="/referanslar/">Referanslar</a></li>
+								<li><a href="/iletisim/">İleşim</a></li>
+							</ul>
                     </div>
                 </div>
 
@@ -101,8 +107,7 @@
                             {% csrf_token %}
 
                             <input id="query" name="query" class="input search-input" type="text" placeholder="Enter your keyword"/>
-
-
+                            <button class="search-btn"><i class="fa fa-search"></i> </button>
 
                             {% load mptt_tags %}
                             <select name="catid" class="input search-categories">
@@ -116,6 +121,7 @@
                                     {% endif %}
                                 {% endrecursetree %}
                             </select>
+
                         </form>
                     </div>
                 </div>

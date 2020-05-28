@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.contrib.auth import logout,login,authenticate
 from django import forms
 from home.forms import SignUpForm,SearchForm
-
+import json
 
 # Create your views here.
 from home.models import Setting, ContactFormu,ContactFormMessage
@@ -25,6 +25,11 @@ def index(request):
     dunya =  Content.objects.filter(type='Dunya',status='True').order_by('-id')[:4]
     ekonomi = Content.objects.filter(type='Ekonomi',status='True').order_by('-id')[:4]
     magazin = Content.objects.filter(type='Magazin',status='True').order_by('-id')[:4]
+    egitim = Content.objects.filter(type='Egitim',status='True').order_by('-id')[:4]
+    sanat = Content.objects.filter(type='Sanat', status='True').order_by('-id')[:4]
+    saglik = Content.objects.filter(type='Saglik', status='True').order_by('-id')[:4]
+    spor = Content.objects.filter(type='Spor', status='True').order_by('-id')[:4]
+    teknoloji = Content.objects.filter(type='Teknoloji', status='True').order_by('-id')[:4]
 
     context={'setting' : setting,
              'category' : category,
@@ -33,6 +38,11 @@ def index(request):
              'dunya': dunya,
              'ekonomi': ekonomi,
              'magazin': magazin,
+             'egitim': egitim,
+             'sanat': sanat,
+             'saglik': saglik,
+             'spor': spor,
+             'teknoloji': teknoloji,
              'page':'home',
              'sliderdata':sliderdata,
              'daynews': daynews,
@@ -117,7 +127,6 @@ def news_search(request):
                 news =News.objects.filter(title__icontains=query,category_id=catid)
             context ={ 'news': news,
                        'category': category,
-
                      }
             return render(request, 'news_search.html', context)
     return HttpResponseRedirect('/')

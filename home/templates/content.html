@@ -10,8 +10,8 @@
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordian" href="#mens">
-                                        <span class="badge pull-right"><i class="fa fa-plus"></i></span>
-                                        Haber Kategorileri
+                                        <span class="badge pull-right" style="color: #FE980F"><i class="fa fa-plus"></i></span>
+                                        <h5 style="color: #FE980F">Haber Kategorileri</h5>
                                     </a>
                                 </h4>
                             </div>
@@ -24,7 +24,7 @@
                                             <li>
                                                 <a href="/category/{{node.id}}/{{node.slug}}">{{ node.title }} </a>
                                                 {% if not node.is_leaf_node %}
-                                                    <ul class="children" >
+                                                    <ul class="children">
                                                         <li><a href="/category/{{ node.slug }}">{{ children }}</a></li>
 
                                                     </ul>
@@ -75,7 +75,7 @@
                         <ul class="list-group-item">
                             {% for rs in son_dakika %}
                                 <li><a href="/content/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></li>
-                                 <hr>
+                                <hr>
                             {% endfor %}
                         </ul>
                     </div>
@@ -98,14 +98,90 @@
                         <ul class="list-group-item">
                             {% for rs in ekonomi %}
                                 <li><a href="/content/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></li>
-                                 <hr>
+                                <hr>
                             {% endfor %}
                         </ul>
                     </div>
                 </div>
-            <br>
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="features_items">
+                            <h3 class="title text-center" style="color: orange">Magazin</h3>
+                        </div>
+                        <ul class="list-group-item">
+                            {% for rs in magazin %}
+                                <li><a href="/content/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></li>
+                                <hr>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="features_items">
+                            <h3 class="title text-center" style="color: orange">Egitim</h3>
+                        </div>
+                        <ul class="list-group-item">
+                            {% for rs in egitim %}
+                                <li><a href="/content/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></li>
+                                <hr>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="features_items">
+                            <h3 class="title text-center" style="color: orange">Sanat</h3>
+                        </div>
+                        <ul class="list-group-item">
+                            {% for rs in sanat %}
+                                <li><a href="/content/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></li>
+                                <hr>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+            <div class="row">
+                    <div class="col-sm-4">
+                        <div class="features_items">
+                            <h3 class="title text-center" style="color: orange">Saglik</h3>
+                        </div>
+                        <ul class="list-group-item">
+                            {% for rs in saglik %}
+                                <li><a href="/content/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></li>
+                                <hr>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="features_items">
+                            <h3 class="title text-center" style="color: orange">Spor</h3>
+                        </div>
+                        <ul class="list-group-item">
+                            {% for rs in spor %}
+                                <li><a href="/content/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></li>
+                                <hr>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="features_items">
+                            <h3 class="title text-center" style="color: orange">Teknoloji</h3>
+                        </div>
+                        <ul class="list-group-item">
+                            {% for rs in teknoloji %}
+                                <li><a href="/content/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></li>
+                                <hr>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <br>
                 <div class="features_items"><!--features_items-->
-                    <h2 class="title text-center">Gündem</h2>
+                    <h2 class="title text-center">Gündemdekiler</h2>
                     {% for rs in daynews %}
                         <div class="col-sm-4">
                             <div class="product-image-wrapper">
@@ -136,6 +212,7 @@
                     <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="item active">
+
                                 {% for rs in randomnews %}
                                     <div class="col-sm-4">
                                         <div class="product-image-wrapper">
@@ -152,6 +229,7 @@
 
                                     </div>
                                 {% endfor %}
+
                             </div>
                         </div>
                         <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">

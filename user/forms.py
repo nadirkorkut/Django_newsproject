@@ -35,5 +35,5 @@ class ProfileUpdateForm(forms.ModelForm):
             'address': TextInput(attrs={'class': 'form-control', 'placeholder': 'address'}),
             'city' : Select(attrs={'class': 'input', 'placeholder': 'city'},choices=CITY),
             'country': TextInput(attrs={'class': 'form-control', 'placeholder': 'country'}),
-            'image' : FileInput(attrs={'class': 'input', 'placeholder': 'image'}),
+            'image' : FileInput(attrs={'class': 'form-control', 'placeholder': 'image'}),
         }
